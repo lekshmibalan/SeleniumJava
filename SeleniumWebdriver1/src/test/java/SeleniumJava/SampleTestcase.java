@@ -1,6 +1,7 @@
 package SeleniumJava;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 /* Test case
  ---------------
@@ -11,6 +12,7 @@ import org.openqa.selenium.WebDriver;
  */
 
 public class SampleTestcase {
+	
 	public static void main(String[] args) {
 		
 		//1. Launch browser(Chrome)
