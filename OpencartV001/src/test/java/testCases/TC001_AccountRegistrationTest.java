@@ -12,24 +12,10 @@ import org.testng.annotations.Test;
 
 import pageObjects.AccountRegistrationPage;
 import pageObjects.HomePage;
-public class TC001_AccountRegistrationTest {
+import testBase.BaseClass;
+public class TC001_AccountRegistrationTest extends BaseClass{
 
-	public WebDriver driver;
 	
-	@BeforeClass
-	public void setup()
-	{
-		driver=new ChromeDriver();
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("https://tutorialsninja.com/demo/");
-		driver.manage().window().maximize();
-	}
-	@AfterClass
-	public void tearDown()
-	{
-		driver.quit();
-	}
 	@Test
 	public void verify_account_registration()
 	{
@@ -54,21 +40,6 @@ public class TC001_AccountRegistrationTest {
 		Assert.assertEquals(confmsg, "Your Account Has Been Created!");
 	}
 	
-	public String randomeString()
-	{
-		String generatedstring=RandomStringUtils.randomAlphabetic(5);
-		return generatedstring;
-	}
 	
-	public String randomeNumber()
-	{
-		String generatednumber=RandomStringUtils.randomNumeric(10);
-		return generatednumber;
-	}
-	public String randomeAlphaNumeric()
-	{
-		String generatedstring=RandomStringUtils.randomAlphabetic(3);
-		String generatednumber=RandomStringUtils.randomNumeric(3);
-		return (generatedstring+generatednumber);
-	}
 }
+                                  
