@@ -1,9 +1,4 @@
-[2025-09-01 17:09:25] [INFO] Utils - [TestNG] Running:
-  /home/lekshmi/git/SeleniumJava/OpencartV001/master.xml
-
-[2025-09-01 17:09:27] [INFO] TC001_AccountRegistrationTest - Starting TC001_AccountRegistrationTest
-[2025-09-01 17:09:27] [INFO] TC001_AccountRegistrationTest - Clicked on MyAccount link
-[2025-09-01 17:09:28] [INFO] TC001_AccountRegistrationTest - Clicked on Register link
-[2025-09-01 17:09:28] [INFO] TC001_AccountRegistrationTest - Providing customer data
-[2025-09-01 17:09:29] [INFO] TC001_AccountRegistrationTest - Validating expected message..
-[2025-09-01 17:09:29] [INFO] TC001_AccountRegistrationTest - Finished TC001_AccountRegistrationTest
+[2025-09-02 14:01:00] [INFO] TC001_AccountRegistrationTest - Validating expected message..
+[2025-09-02 14:01:00] [INFO] TC001_AccountRegistrationTest - Finished TC001_AccountRegistrationTest
+[2025-09-02 14:01:02] [INFO] TC002_LoginTest - Starting TC002_LoginTest
+[2025-09-02 14:01:04] [INFO] TC002_LoginTest - Finished TC002_LoginTest

@@ -20,4 +20,11 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>testData/Logindata.xlsx</name>
+			<type>1</type>
+			<location>/home/lekshmi/Lekshmi L/Automation/Automationdata/Logindata.xlsx</location>
+		</link>
+	</linkedResources>
 </projectDescription>
