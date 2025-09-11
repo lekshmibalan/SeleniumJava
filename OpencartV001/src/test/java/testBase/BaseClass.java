@@ -16,11 +16,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 public class BaseClass {
-public WebDriver driver;
+public static WebDriver driver;
 public Logger logger;  // for Log4j
 public Properties p;
 	
-	@BeforeClass
+	@BeforeClass(groups= {"Sanity","Regression","Master"})
 	@Parameters({"os","browser"})
 	public void setup(String os,String br) throws Exception
 	{
