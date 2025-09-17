@@ -1,38 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-22T12:28:08 IST" name="Default suite" finished-at="2025-08-22T12:28:16 IST" duration-ms="7214">
+  <suite started-at="2025-09-17T11:32:00 IST" name="Default suite" finished-at="2025-09-17T11:32:00 IST" duration-ms="45">
     <groups>
     </groups>
-    <test started-at="2025-08-22T12:28:08 IST" name="Default test" finished-at="2025-08-22T12:28:16 IST" duration-ms="7214">
-      <class name="listners.OrangeHRM">
-        <test-method is-config="true" signature="setup()[pri:0, instance:listners.OrangeHRM@30c15d8b]" started-at="2025-08-22T12:28:08 IST" name="setup" finished-at="2025-08-22T12:28:16 IST" duration-ms="7045" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testLogo()[pri:1, instance:listners.OrangeHRM@30c15d8b]" started-at="2025-08-22T12:28:16 IST" name="testLogo" finished-at="2025-08-22T12:28:16 IST" duration-ms="39" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogo -->
-        <test-method signature="testAppUrl()[pri:2, instance:listners.OrangeHRM@30c15d8b]" started-at="2025-08-22T12:28:16 IST" name="testAppUrl" finished-at="2025-08-22T12:28:16 IST" duration-ms="13" status="FAIL">
-          <exception class="java.lang.AssertionError">
+    <test started-at="2025-09-17T11:32:00 IST" name="Default test" finished-at="2025-09-17T11:32:00 IST" duration-ms="45">
+      <class name="testproject1.Login">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testproject1.Login@4c371370]" started-at="2025-09-17T11:32:00 IST" name="setup" finished-at="2025-09-17T11:32:00 IST" duration-ms="6" status="FAIL">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[expected [https://opensource-demo.orangehrmlive.com/] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]]>
+              <![CDATA[Unresolved compilation problem: 
+WebDriverManager cannot be resolved
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at listners.OrangeHRM.testAppUrl(OrangeHRM.java:44)
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+WebDriverManager cannot be resolved
+
+at testproject1.Login.setup(Login.java:23)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
@@ -57,20 +51,34 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAppUrl -->
-        <test-method signature="testHomePageTitle()[pri:3, instance:listners.OrangeHRM@30c15d8b]" started-at="2025-08-22T12:28:16 IST" name="testHomePageTitle" finished-at="2025-08-22T12:28:16 IST" depends-on-methods="listners.OrangeHRM.testAppUrl" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
+        </test-method> <!-- setup -->
+        <test-method signature="addCustomerDetailsTest()[pri:0, instance:testproject1.Login@4c371370]" started-at="2025-09-17T11:32:00 IST" name="addCustomerDetailsTest" finished-at="2025-09-17T11:32:00 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[Method listners.OrangeHRM.testHomePageTitle() on instance listners.OrangeHRM@30c15d8b depends on not successfully finished methods 
-[listners.OrangeHRM.testAppUrl() on instance listners.OrangeHRM@30c15d8b]]]>
+              <![CDATA[Unresolved compilation problem: 
+WebDriverManager cannot be resolved
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method listners.OrangeHRM.testHomePageTitle() on instance listners.OrangeHRM@30c15d8b depends on not successfully finished methods 
-[listners.OrangeHRM.testAppUrl() on instance listners.OrangeHRM@30c15d8b]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+WebDriverManager cannot be resolved
+
+at testproject1.Login.setup(Login.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
@@ -91,15 +99,71 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testHomePageTitle -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:listners.OrangeHRM@30c15d8b]" started-at="2025-08-22T12:28:16 IST" name="Teardown" finished-at="2025-08-22T12:28:16 IST" duration-ms="78" status="PASS">
+        </test-method> <!-- addCustomerDetailsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testproject1.Login@4c371370]" started-at="2025-09-17T11:32:00 IST" name="tearDown" finished-at="2025-09-17T11:32:00 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Teardown -->
-      </class> <!-- listners.OrangeHRM -->
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:testproject1.Login@4c371370]" started-at="2025-09-17T11:32:00 IST" name="setup" finished-at="2025-09-17T11:32:00 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:0, instance:testproject1.Login@4c371370]" started-at="2025-09-17T11:32:00 IST" name="loginTest" finished-at="2025-09-17T11:32:00 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+WebDriverManager cannot be resolved
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+WebDriverManager cannot be resolved
+
+at testproject1.Login.setup(Login.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testproject1.Login@4c371370]" started-at="2025-09-17T11:32:00 IST" name="tearDown" finished-at="2025-09-17T11:32:00 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testproject1.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

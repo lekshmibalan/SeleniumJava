@@ -25,8 +25,8 @@ public class TC003_LoginDDT extends BaseClass{
 		
 		//LoginPage
 		LoginPage lp=new LoginPage(driver);
-		lp.setEmail();
-		lp.setPassword();
+		lp.setEmail("username");
+		lp.setPassword("password");
 		
 		//MyAccountPage
 		MyAccountPage macc=new MyAccountPage(driver);

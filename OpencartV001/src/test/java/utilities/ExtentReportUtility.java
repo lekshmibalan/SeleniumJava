@@ -1,4 +1,5 @@
 package utilities;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -14,7 +15,7 @@ public class ExtentReportUtility implements ITestListener {
 
     @Override
     public void onStart(ITestContext context) {
-        // Report file location
+        // Correct report file location
         String reportPath = System.getProperty("user.dir") + "/test-output/ExtentReport.html";
 
         ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
@@ -28,7 +29,7 @@ public class ExtentReportUtility implements ITestListener {
         // System info
         extent.setSystemInfo("Project", "OpenCartV001");
         extent.setSystemInfo("Tester", "Lekshmi");
-        extent.setSystemInfo("OS", System.getProperty("os.ubuntu"));
+        extent.setSystemInfo("OS", System.getProperty("os.name"));
         extent.setSystemInfo("Browser", "Chrome"); // You can parameterize this
     }
 
@@ -40,25 +41,32 @@ public class ExtentReportUtility implements ITestListener {
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        test.get().pass("Test Passed");
+        ExtentTest extentTest = test.get();
+        if (extentTest != null) {
+            extentTest.pass("Test Passed");
+        }
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
-        test.get().fail("Test Failed: " + result.getThrowable());
-
-        // 🔹 You can also add screenshot capture here if needed
-        // String screenshotPath = ScreenshotUtility.capture(driver, result.getMethod().getMethodName());
-        // test.get().addScreenCaptureFromPath(screenshotPath);
+        ExtentTest extentTest = test.get();
+        if (extentTest != null) {
+            extentTest.fail("Test Failed: " + result.getThrowable());
+        }
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
-        test.get().skip("Test Skipped: " + result.getThrowable());
+        ExtentTest extentTest = test.get();
+        if (extentTest != null) {
+            extentTest.skip("Test Skipped: " + result.getThrowable());
+        }
     }
 
     @Override
     public void onFinish(ITestContext context) {
-        extent.flush();
+        if (extent != null) {
+            extent.flush();
+        }
     }
 }
