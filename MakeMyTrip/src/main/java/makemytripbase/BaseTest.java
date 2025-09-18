@@ -43,9 +43,10 @@ public void readPropertyFile() throws IOException {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
+}
 	
 	public void setExtentReport() {
-		htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir"))+"/test-0utput/ExtentReport.html");
+		htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir")+"//extentReports//MakeMyTripReport.html");
 		
 		htmlReporter.config().setDocumentTitle("MakeMyTrip Automation Report");
 		htmlReporter.config().setReportName("MakeMyTrip Functional Testing");
@@ -65,4 +66,4 @@ public void readPropertyFile() throws IOException {
 		
 	}
 }
-}
+

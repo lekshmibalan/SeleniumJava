@@ -16,11 +16,8 @@ public class TestSetup extends BaseTest{
 		driverInitialization();
 		setExtentReport();
 		
-		
-		
-		
-		
 		}
+	
 	@AfterMethod
 	@AfterSuite
 	public void tearDown() {
