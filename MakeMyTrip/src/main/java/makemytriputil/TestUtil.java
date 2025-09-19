@@ -1,8 +1,15 @@
 package makemytriputil;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.io.FileHandler;
 
 import makemytripbase.BaseTest;
 
@@ -30,5 +37,25 @@ public class TestUtil extends BaseTest{
 		return By.xpath(rawpath);
 	}
 	
+	public static String getScreenshot() {
+		String currentDate = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 	
-}
+		
+		File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		String destination =System.getProperty("user.dir")+"\\src\\test\\resources\\Screenshots\\"+currentDate+".png";
+		try {
+			FileHandler.copy(source, new File(destination));
+		} catch (IOException e) {
+			System.out.println("Failed to capture the Screenshot:"+e.getMessage());
+			
+		}
+		return destination;
+		
+		
+		
+	}
+	
+	}
+
+
+
