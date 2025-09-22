@@ -1,53 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-19T12:18:00 IST" name="Framework" finished-at="2025-09-19T12:18:00 IST" duration-ms="17">
+  <suite started-at="2025-09-22T12:10:17 IST" name="Framework" finished-at="2025-09-22T12:10:18 IST" duration-ms="46">
     <groups>
     </groups>
-    <test started-at="2025-09-19T12:18:00 IST" name="Search Flight Test" finished-at="2025-09-19T12:18:00 IST" duration-ms="17">
-      <class name="makemytriptestcases.TestSetup">
-        <test-method is-config="true" signature="setup()[pri:0, instance:makemytriptestcases.TestSetup@76884e4b]" started-at="2025-09-19T12:17:57 IST" name="setup" finished-at="2025-09-19T12:18:00 IST" duration-ms="3165" status="FAIL">
-          <exception class="java.lang.NumberFormatException">
-            <message>
-              <![CDATA[Cannot parse null string]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NumberFormatException: Cannot parse null string
-at java.base/java.lang.Integer.parseInt(Integer.java:624)
-at java.base/java.lang.Integer.parseInt(Integer.java:778)
-at makemytripbase.BaseTest.driverInitialization(BaseTest.java:32)
-at makemytriptestcases.TestSetup.setup(TestSetup.java:16)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NumberFormatException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:makemytriptestcases.TestSetup@76884e4b]" started-at="2025-09-19T12:18:00 IST" name="tearDown" finished-at="2025-09-19T12:18:00 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- makemytriptestcases.TestSetup -->
+    <test started-at="2025-09-22T12:10:17 IST" name="Search Flight Test" finished-at="2025-09-22T12:10:17 IST" duration-ms="20">
       <class name="makemytriptestcases.FlightPageTest">
-        <test-method signature="searchFlight()[pri:0, instance:makemytriptestcases.FlightPageTest@66ac5762]" started-at="2025-09-19T12:18:00 IST" name="searchFlight" finished-at="2025-09-19T12:18:00 IST" duration-ms="0" status="SKIP">
+        <test-method signature="searchFlight()[pri:0, instance:makemytriptestcases.FlightPageTest@797cf65c]" started-at="2025-09-22T12:10:17 IST" name="searchFlight" finished-at="2025-09-22T12:10:17 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.NumberFormatException">
             <message>
               <![CDATA[Cannot parse null string]]>
@@ -83,5 +43,83 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </test-method> <!-- searchFlight -->
       </class> <!-- makemytriptestcases.FlightPageTest -->
     </test> <!-- Search Flight Test -->
+    <test started-at="2025-09-22T12:10:17 IST" name="Login Test" finished-at="2025-09-22T12:10:18 IST" duration-ms="3">
+      <class name="makemytriptestcases.TestSetup">
+        <test-method is-config="true" signature="setup()[pri:0, instance:makemytriptestcases.TestSetup@126945f9]" started-at="2025-09-22T12:10:15 IST" name="setup" finished-at="2025-09-22T12:10:17 IST" duration-ms="2378" status="FAIL">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[Cannot parse null string]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: Cannot parse null string
+at java.base/java.lang.Integer.parseInt(Integer.java:624)
+at java.base/java.lang.Integer.parseInt(Integer.java:778)
+at makemytripbase.BaseTest.driverInitialization(BaseTest.java:32)
+at makemytriptestcases.TestSetup.setup(TestSetup.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:makemytriptestcases.TestSetup@126945f9]" started-at="2025-09-22T12:10:18 IST" name="tearDown" finished-at="2025-09-22T12:10:18 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- makemytriptestcases.TestSetup -->
+      <class name="makemytriptestcases.LoginPageTest">
+        <test-method signature="testLoginPage()[pri:0, instance:makemytriptestcases.LoginPageTest@6399551e]" started-at="2025-09-22T12:10:17 IST" name="testLoginPage" finished-at="2025-09-22T12:10:17 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[Cannot parse null string]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: Cannot parse null string
+at java.base/java.lang.Integer.parseInt(Integer.java:624)
+at java.base/java.lang.Integer.parseInt(Integer.java:778)
+at makemytripbase.BaseTest.driverInitialization(BaseTest.java:32)
+at makemytriptestcases.TestSetup.setup(TestSetup.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPage -->
+      </class> <!-- makemytriptestcases.LoginPageTest -->
+    </test> <!-- Login Test -->
   </suite> <!-- Framework -->
 </testng-results>
