@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="generatereport.Listeners"></listener>
+	</listeners>
+	<parameter name="browser" value="chrome"></parameter>
+	<test name="uac module">
+		<classes>
+
+			<class name="pagestestscript.MeetingPageTest">
+				<methods>
+					<include
+						name="verifyThatTheUserIsAbleToInitiateMeetingWithOutDate"></include>
+					<include
+						name="verifyThatTheUserIsAbleToInitiateMeetingWithOutFromTime"></include>
+					<include
+						name="verifyThatTheUserIsAbleToInitiateMeetingWithOutToTime"></include>
+					<include
+						name="verifyThatTheUserIsAbleToInitiateMeetingWithoutVenue"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

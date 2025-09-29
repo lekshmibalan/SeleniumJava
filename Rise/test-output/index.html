@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>UnituserLogin.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 5 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pagestestscript.ModuleListPageTest" class="method navigator-link" hash-for-method="verifyThatTheUserIsAbleToClickOnUnitManagementModule">verifyThatTheUserIsAbleToClickOnUnitManagementModule</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pagestestscript.ModuleListPageTest" class="method navigator-link" hash-for-method="verifyThatTheUserIsAbleToClickOn_UAC_Module">verifyThatTheUserIsAbleToClickOn_UAC_Module</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pagestestscript.LoginPageTest" class="method navigator-link" hash-for-method="verifyThatUserIsAbleToLoginAsPublicUserWithInvalidCredentials">verifyThatUserIsAbleToLoginAsPublicUserWithInvalidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pagestestscript.LoginPageTest" class="method navigator-link" hash-for-method="verifyThatUserIsAbleToLoginAsPublicUserWithValidCredentials">verifyThatUserIsAbleToLoginAsPublicUserWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pagestestscript.LoginPageTest" class="method navigator-link" hash-for-method="verifyThatUserisAbleToLoginAsPublicUserWithoutChanginguserType">verifyThatUserisAbleToLoginAsPublicUserWithoutChanginguserType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">pagestestscript.ModuleListPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThatTheUserIsAbleToClickOnUnitManagementModule">
+                  </a> <!-- verifyThatTheUserIsAbleToClickOnUnitManagementModule -->
+                  <span class="method-name">verifyThatTheUserIsAbleToClickOnUnitManagementModule</span>
+                  <div class="stack-trace">org.apache.poi.openxml4j.exceptions.ODFNotOfficeXmlFileException: The supplied data appears to be in ODF (Open Document) Format. Formats like these (eg ODS, ODP) are not supported, try Apache ODFToolkit
+	at org.apache.poi.openxml4j.opc.ZipPackage.getPartsImpl(ZipPackage.java:291)
+	at org.apache.poi.openxml4j.opc.OPCPackage.getParts(OPCPackage.java:749)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:322)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
+	at pageutilities.ExcelUtility.readStringData(ExcelUtility.java:19)
+	at pagestestscript.ModuleListPageTest.verifyThatTheUserIsAbleToClickOnUnitManagementModule(ModuleListPageTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThatTheUserIsAbleToClickOn_UAC_Module">
+                  </a> <!-- verifyThatTheUserIsAbleToClickOn_UAC_Module -->
+                  <span class="method-name">verifyThatTheUserIsAbleToClickOn_UAC_Module</span>
+                  <div class="stack-trace">org.apache.poi.openxml4j.exceptions.ODFNotOfficeXmlFileException: The supplied data appears to be in ODF (Open Document) Format. Formats like these (eg ODS, ODP) are not supported, try Apache ODFToolkit
+	at org.apache.poi.openxml4j.opc.ZipPackage.getPartsImpl(ZipPackage.java:291)
+	at org.apache.poi.openxml4j.opc.OPCPackage.getParts(OPCPackage.java:749)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:322)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
+	at pageutilities.ExcelUtility.readStringData(ExcelUtility.java:19)
+	at pagestestscript.ModuleListPageTest.verifyThatTheUserIsAbleToClickOn_UAC_Module(ModuleListPageTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">pagestestscript.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThatUserIsAbleToLoginAsPublicUserWithInvalidCredentials">
+                  </a> <!-- verifyThatUserIsAbleToLoginAsPublicUserWithInvalidCredentials -->
+                  <span class="method-name">verifyThatUserIsAbleToLoginAsPublicUserWithInvalidCredentials</span>
+                  <div class="stack-trace">org.apache.poi.openxml4j.exceptions.ODFNotOfficeXmlFileException: The supplied data appears to be in ODF (Open Document) Format. Formats like these (eg ODS, ODP) are not supported, try Apache ODFToolkit
+	at org.apache.poi.openxml4j.opc.ZipPackage.getPartsImpl(ZipPackage.java:291)
+	at org.apache.poi.openxml4j.opc.OPCPackage.getParts(OPCPackage.java:749)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:322)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
+	at pageutilities.ExcelUtility.readStringData(ExcelUtility.java:19)
+	at pagestestscript.LoginPageTest.verifyThatUserIsAbleToLoginAsPublicUserWithInvalidCredentials(LoginPageTest.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThatUserIsAbleToLoginAsPublicUserWithValidCredentials">
+                  </a> <!-- verifyThatUserIsAbleToLoginAsPublicUserWithValidCredentials -->
+                  <span class="method-name">verifyThatUserIsAbleToLoginAsPublicUserWithValidCredentials</span>
+                  <div class="stack-trace">org.apache.poi.openxml4j.exceptions.ODFNotOfficeXmlFileException: The supplied data appears to be in ODF (Open Document) Format. Formats like these (eg ODS, ODP) are not supported, try Apache ODFToolkit
+	at org.apache.poi.openxml4j.opc.ZipPackage.getPartsImpl(ZipPackage.java:291)
+	at org.apache.poi.openxml4j.opc.OPCPackage.getParts(OPCPackage.java:749)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:322)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
+	at pageutilities.ExcelUtility.readStringData(ExcelUtility.java:19)
+	at pagestestscript.LoginPageTest.verifyThatUserIsAbleToLoginAsPublicUserWithValidCredentials(LoginPageTest.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyThatUserisAbleToLoginAsPublicUserWithoutChanginguserType">
+                  </a> <!-- verifyThatUserisAbleToLoginAsPublicUserWithoutChanginguserType -->
+                  <span class="method-name">verifyThatUserisAbleToLoginAsPublicUserWithoutChanginguserType</span>
+                  <div class="stack-trace">org.apache.poi.openxml4j.exceptions.ODFNotOfficeXmlFileException: The supplied data appears to be in ODF (Open Document) Format. Formats like these (eg ODS, ODP) are not supported, try Apache ODFToolkit
+	at org.apache.poi.openxml4j.opc.ZipPackage.getPartsImpl(ZipPackage.java:291)
+	at org.apache.poi.openxml4j.opc.OPCPackage.getParts(OPCPackage.java:749)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:322)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
+	at pageutilities.ExcelUtility.readStringData(ExcelUtility.java:19)
+	at pagestestscript.LoginPageTest.verifyThatUserisAbleToLoginAsPublicUserWithoutChanginguserType(LoginPageTest.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/lekshmi/eclipse-workspace/Rise/UnituserLogin.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;generatereport.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;unitlogin&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;pagestestscript.LoginPageTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifyThatUserIsAbleToLoginAsPublicUserWithValidCredentials&quot;/&gt;
+          &lt;include name=&quot;verifyThatUserIsAbleToLoginAsPublicUserWithInvalidCredentials&quot;/&gt;
+          &lt;include name=&quot;verifyThatUserisAbleToLoginAsPublicUserWithoutChanginguserType&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- pagestestscript.LoginPageTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- unitlogin --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;opening unit management module in public user&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;pagestestscript.ModuleListPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- opening unit management module in public user --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">unitlogin (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">opening unit management module in public user (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyThatUserIsAbleToLoginAsPublicUserWithValidCredentials')
+data.setCell(0, 2, 'pagestestscript.LoginPageTest')
+data.setCell(0, 3, 82);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyThatUserIsAbleToLoginAsPublicUserWithInvalidCredentials')
+data.setCell(1, 2, 'pagestestscript.LoginPageTest')
+data.setCell(1, 3, 13);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyThatTheUserIsAbleToClickOnUnitManagementModule')
+data.setCell(2, 2, 'pagestestscript.ModuleListPageTest')
+data.setCell(2, 3, 11);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyThatUserisAbleToLoginAsPublicUserWithoutChanginguserType')
+data.setCell(3, 2, 'pagestestscript.LoginPageTest')
+data.setCell(3, 3, 7);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyThatTheUserIsAbleToClickOn_UAC_Module')
+data.setCell(4, 2, 'pagestestscript.ModuleListPageTest')
+data.setCell(4, 3, 7);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 120 ms</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">4 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">pagestestscript.LoginPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyThatTheUserIsAbleToLoginAsSeepzUserWithInvalidCredentials</span>
+                <br/>
+                <span class="ignored-method-name">verifyThatTheUserIsAbleToLoginAsSeepzUser</span>
+                <br/>
+                <span class="ignored-method-name">verifyThatTheUserIsAbleToLoginWithValidUserNameAndInvalidPassword</span>
+                <br/>
+                <span class="ignored-method-name">verifyThatTheUserIsAbleToLoginWithInvalidUsenameAndValidPassword</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">pagestestscript.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyThatUserIsAbleToLoginAsPublicUserWithValidCredentials</span>
+                <span class="method-start">3243 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThatUserIsAbleToLoginAsPublicUserWithValidCredentials status=FAILURE method=L...)</span>
+                <span class="method-start">3329 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">3498 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyThatUserIsAbleToLoginAsPublicUserWithInvalidCredentials</span>
+                <span class="method-start">5184 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThatUserIsAbleToLoginAsPublicUserWithInvalidCredentials status=FAILURE method...)</span>
+                <span class="method-start">5204 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">5371 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyThatUserisAbleToLoginAsPublicUserWithoutChanginguserType</span>
+                <span class="method-start">7033 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThatUserisAbleToLoginAsPublicUserWithoutChanginguserType status=FAILURE metho...)</span>
+                <span class="method-start">7045 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">pagestestscript.ModuleListPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">7369 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyThatTheUserIsAbleToClickOnUnitManagementModule</span>
+                <span class="method-start">9062 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThatTheUserIsAbleToClickOnUnitManagementModule status=FAILURE method=ModuleLi...)</span>
+                <span class="method-start">9079 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">9251 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyThatTheUserIsAbleToClickOn_UAC_Module</span>
+                <span class="method-start">10938 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyThatTheUserIsAbleToClickOn_UAC_Module status=FAILURE method=ModuleListPageTes...)</span>
+                <span class="method-start">10948 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

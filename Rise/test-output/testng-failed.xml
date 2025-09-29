@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="generatereport.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="unitlogin(failed)">
+    <classes>
+      <class name="pagestestscript.LoginPageTest">
+        <methods>
+          <include name="verifyThatUserIsAbleToLoginAsPublicUserWithValidCredentials"/>
+          <include name="beforeMethod"/>
+          <include name="verifyThatUserIsAbleToLoginAsPublicUserWithInvalidCredentials"/>
+          <include name="verifyThatUserisAbleToLoginAsPublicUserWithoutChanginguserType"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- pagestestscript.LoginPageTest -->
+    </classes>
+  </test> <!-- unitlogin(failed) -->
+  <test thread-count="5" name="opening unit management module in public user(failed)">
+    <classes>
+      <class name="pagestestscript.ModuleListPageTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="verifyThatTheUserIsAbleToClickOn_UAC_Module"/>
+          <include name="verifyThatTheUserIsAbleToClickOnUnitManagementModule"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- pagestestscript.ModuleListPageTest -->
+    </classes>
+  </test> <!-- opening unit management module in public user(failed) -->
+</suite> <!-- Failed suite [Suite] -->
