@@ -13,6 +13,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import galaxyconstants.Constant;
@@ -24,7 +25,7 @@ public class Galaxy_BaseTest {
 	public FileInputStream fis;
 	@BeforeMethod
 	@Parameters("browser")
-	public void beforeMethod(String browser) throws Exception {
+	public void beforeMethod(@Optional String browser) throws Exception {
 		try {
 			properties = new Properties();
 			fis = new FileInputStream(Constant.CONFIG_FILE);

@@ -28,6 +28,8 @@ WebElement Password;
 @FindBy(xpath="//input[@value='Login']")
 WebElement LoginButton;
 
+WebElement invalidCredentialAlert;
+
 public Galaxy_LoginPage enterUserName(String username) {
 	UserName.sendKeys(username);
 	return this;
@@ -41,7 +43,10 @@ public Galaxy_LoginPage clickOnLoginButton() {
 	LoginButton.click();
 	return this;
 }
+public boolean isAlertIsDisplayed() {
 
+	return invalidCredentialAlert.isDisplayed();
+}
 
 
 
